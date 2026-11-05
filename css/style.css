@@ -103,6 +103,15 @@ body{
 }
 
 .main-container-image{
+   /* aspect-ratio: 327/200; */
+   /* width: 100%; */
+   /* border-top-left-radius: 10px; */
+   /* border-top-right-radius: 10px; */
+   display: flex;
+   flex-direction: column;
+}
+
+.hero-image{
    aspect-ratio: 327/200;
    width: 100%;
    border-top-left-radius: 10px;
@@ -244,3 +253,56 @@ body{
 }
 
 
+@media screen and (min-width:768px){
+
+.main {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    column-gap: 32px;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.main-container{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   padding: 227px 80px 227px 80px;
+   align-items: center;
+}
+
+.main-container-image {
+    flex-grow: 1;
+    flex-direction: row;
+    min-width: 229px;
+}
+
+.hero-image{
+   border-top-right-radius: 0;
+  border-bottom-left-radius: 10px;
+
+   width: 100%;
+  height: auto;
+  aspect-ratio: 229 / 346; /* Maintains the exact initial proportion as it grows */
+  object-fit: cover; /* Prevents distortion if the image's natural ratio differs */
+  display: block; /* Removes extra bottom whitespace */
+}
+   
+.main-container-content{
+      flex: 1 1 auto;
+      justify-content: center;
+      padding: 0;
+      row-gap: 24px;
+      padding-right: 36px;
+}
+
+.content-btn-group{
+   padding: 0;
+} 
+
+
+}
