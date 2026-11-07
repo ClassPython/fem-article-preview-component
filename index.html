@@ -35,8 +35,10 @@
                         
                     <h3 class="text-description">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</h3>
                 </div>
-                    
-                <div class="content-btn-group">
+    <!-- mobile profile view  -->
+     <!-- ? mobile-content-btn-group  mobile-only -->
+                <div class="content-btn-group mobile-only">
+                <!-- <div class="content-btn-group desktop-only"> -->
                         
                     <div class="btn-group-profile">
                         <img class="profile-img" src="./images/avatar-michelle.jpg" alt="">
@@ -49,14 +51,16 @@
                         
                         <!-- ? will need description of share  -->
                     <div class="btn">
-                            <button class="share-btn" type="button">
+                            <!-- <button class="share-btn" type="button"> -->
+                            <button class="share-btn mobile-btn-open" type="button">
                                 <img class="btn-image" src="./images/icon-share.svg" alt="">
                             </button>
                     </div>   
                 </div>
-
-
-                <div class="share-btn-group display">
+<!-- mobile profile view  -->
+<!-- mobile share links view -->
+ <!-- ?  mobile-share-btn-group  mobile-only display or maybe display-mobile-->
+                <div class="share-btn-group mobile-only display">
 
 
                     <p class="share">share</p>
@@ -76,10 +80,94 @@
                     </div>
 
                     <!-- ? remember to add the hand pointer to each button -->
-                    <button class="share-btn .btn-close" type="button">
+                    <button class="share-btn btn-close mobile-btn-close" type="button">
                         <img class="btn-image" src="./images/icon-share.svg" alt="">
                     </button>
                 </div>
+     <!-- mobile share links view -->           
+
+
+     <!-- desktop profile view -->
+       <!-- ? content-btn-group  desktop-only -->
+        <div class="content-btn-group-desktop desktop-only">
+                        
+                    <div class="btn-group-profile">
+                        <img class="profile-img" src="./images/avatar-michelle.jpg" alt="">
+                            
+                        <div class="profile-info">
+                                <p class="profile-info-title">Michelle Appleton</p>
+                                <span class="profile-info-date">28 Jun 2020</span>
+                        </div>
+                    </div>
+                        
+                        <!-- ? will need description of share  -->
+                    <div class="btn relative">
+                            <button class="share-btn btn-close desktop-btn-open" type="button">
+                                <img class="btn-image" src="./images/icon-share.svg" alt="">
+                            </button>
+
+                            <!--! ------------ -->
+                             <div class="share-btn-group-desktop desktop-only display">
+
+
+                    <p class="share">share</p>
+
+                    <div class="icons">       
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                          <img  class="social-icon" src="./images/icon-facebook.svg" alt="">
+                        </a>
+
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                           <img  class="social-icon" src="./images/icon-twitter.svg" alt="">
+                        </a>
+
+                        <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+                          <img  class="social-icon" src="./images/icon-pinterest.svg" alt="">
+                        </a>
+                    </div>
+                    
+                    <!-- <button class="share-btn btn-close desktop-btn-close" type="button">
+                        <img class="btn-image" src="./images/icon-share.svg" alt="">
+                    </button> -->
+                </div>
+
+                            <!--! ----------------- -->
+                    </div>   
+                </div>
+
+     <!-- desktop profile view -->
+    <!-- desktop share links view -->
+        <!-- <div class="share-btn-group-desktop display mobile-only"> -->
+            <!-- ? desktop-share-btn-group desktop-only display -->
+        <!-- <div class="share-btn-group-desktop display mobile-only"> -->
+        <!-- <div class="share-btn-group-desktop desktop-only display">
+
+
+                    <p class="share">share</p>
+
+                    <div class="icons">       
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                          <img  class="social-icon" src="./images/icon-facebook.svg" alt="">
+                        </a>
+
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                           <img  class="social-icon" src="./images/icon-twitter.svg" alt="">
+                        </a>
+
+                        <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+                          <img  class="social-icon" src="./images/icon-pinterest.svg" alt="">
+                        </a>
+                    </div>
+                    
+                </div>
+                 -->
+                <!-- <button class="share-btn btn-close desktop-btn-close" type="button">
+                    <img class="btn-image" src="./images/icon-share.svg" alt="">
+                </button> -->
+                
+                
+                <!-- ? remember to add the hand pointer to each button -->
+  <!-- desktop share links view -->               
                     
             </div>
                 
