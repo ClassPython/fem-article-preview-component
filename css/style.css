@@ -109,10 +109,7 @@ body{
 }
 
 .main-container-image{
-   /* aspect-ratio: 327/200; */
    width: 100%;
-   /* border-top-left-radius: 10px; */
-   /* border-top-right-radius: 10px; */
    display: flex;
    flex-direction: column;
 }
@@ -128,8 +125,6 @@ body{
    display: flex;
    flex-direction: column;
    row-gap: var(--spacing-300);
-   /* row-gap: 48px; */
-   /* padding: 32px 30px 0px 30px; */
    padding: var(--spacing-200) var(--spacing-187) 0px var(--spacing-187);
    border-bottom-left-radius: 10px;
    border-bottom-right-radius: 10px;
@@ -141,7 +136,7 @@ body{
    row-gap: 16.50px;
 }
 
-/* -------------------------- */
+/* change colors of share icon on hover */
 .share-btn {
   background-color: var(--light-grayish-blue);
   cursor: pointer;
@@ -167,7 +162,6 @@ body{
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   /* row-gap: 24px; */
    row-gap: var(--spacing-150);
 }
 
@@ -193,13 +187,11 @@ body{
    justify-content: space-between;
    align-items: center;
    padding-bottom: var(--spacing-112);
-   /* padding-bottom: 18px; */
 }
 
 .btn-group-profile{
    display: flex;
    flex-direction: row;
-   /* column-gap: 16px; */
    column-gap: var(--spacing-100);
    justify-content: center;
    align-items: center;
@@ -207,9 +199,7 @@ body{
 
 .profile-img{
    width: var(--spacing-250);
-   /* width: 40px; */
    height: var(--spacing-250);
-   /* height: 40px; */
    border-radius: 50%;
 }
 
@@ -243,9 +233,7 @@ body{
 
 .share-btn{
    width:var(--spacing-200);
-   /* width: 32px; */
    height:var(--spacing-200) ;
-   /* height: 32px; */
    border-radius: 50%;
    border: none;
    overflow: hidden;
@@ -255,7 +243,6 @@ body{
    display: flex;
    flex-direction: row;
    padding: var(--spacing-200) var(--spacing-100);
-   /* padding: 32px 16px 32px 16px; */
    margin-left: -30px;
    margin-right: -30px;
    background-color: var(--slate-900);
@@ -275,7 +262,6 @@ body{
    letter-spacing: var(--h4-letter-spacing);
    line-height: var(--h4-line-height);
    text-transform: uppercase;
-   /* padding-right: 24px; */
    padding-right: var(--spacing-150);
    color: var(--slate-400);
 }
@@ -283,13 +269,10 @@ body{
 .icons{
    display: flex;
    column-gap: var(--spacing-100);
-   /* column-gap: 16px; */
    padding-right: var(--spacing-400);
-   /* padding-right: 64px; */
 }
 
 .btn-close{
-   /* text-align: right; */
    text-align: center;
 }
 
@@ -303,31 +286,27 @@ body{
 
 @media screen and (min-width:768px){
    
-/* .main-container-content{ */
 .relative{
    position: relative;
 }
 
-
 .main {
-   display: flex;
+   /* display: flex; */
    flex-direction:row;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   
+   /* justify-content: center; */
+   /* align-items: center; */
+   width: 100%;   
    column-gap: var(--spacing-200);
-   /* column-gap: 32px; */
    background-color: var(--white);
    border-radius: 10px;
+   /* max-width: 992px; */
 }
 
 .main-container{
-   display: flex;
+   /* display: flex; */
    flex-direction: row;
-   width: 100%;
+   /* width: 100%; */
    padding: var(--spacing-1400) var(--spacing-500);
-   /* padding: 227px 80px 227px 80px; */
    align-items: center;
 }
 
@@ -335,6 +314,8 @@ body{
    flex-grow: 1;
    flex-direction: row;
    min-width: 229px;
+   /* Inserted */
+   max-width:290px;
 }
 
 .hero-image{
@@ -350,16 +331,15 @@ body{
 
 .main-container-content{
    flex: 1 1 auto;
+   /* insert max - width */
+   /* max-width: 674px; */
    justify-content: center;
    padding: 0;
    row-gap: var(--spacing-150);
-   /* row-gap: 24px; */
    padding-right: var(--spacing-225);
-   /* padding-right: 36px; */
 }
 
 .main-container-content.row-gap-small{
-   /* row-gap: 24px; */
    row-gap: var(--spacing-150);
 } 
 
@@ -371,38 +351,14 @@ body{
    text-align: center;
 }
 
-
-/* ? ======================================= */
-
 .share-btn-group-desktop{
-   /* display: flex; */
-   /* flex-direction: row; */
    padding: 18px 38px 18px 38px;
    border-radius: 10px;
-   /* margin-left: -30px; */
-   /* margin-right: -30px; */
-   /* background-color: var(--slate-900); */
-   /* border-bottom-left-radius: 10px; */
-   /* border-bottom-right-radius: 10px; */
-   /* justify-content: space-evenly; */
-   /* align-items: center; */
-   
    position: absolute;
-   /* right: -45px; */
-   /* right: 2.8125rem; */
-   /* top: 106px; */
    top: -5.375rem;
-
-   /* ------- */
-   /* position: relative;  */
-   /* Base for absolute triangle */
-  /* background: #00aabb; */
-  /* color: #fff; */
-  /* padding: 15px 20px; */
   padding: 18px 38px 18px 38px;
   border-radius: 10px;
   display: inline-block;
-  /* font-family: sans-serif; */
 }
 
 a img{
@@ -410,37 +366,23 @@ a img{
 }
 
 
-.share{
+/* .share{
    font-size: var(--h4-size);
    font-weight: var(--h4-weight);
    letter-spacing: var(--h4-letter-spacing);
    line-height: var(--h4-line-height);
    text-transform: uppercase;
    padding-right: var(--spacing-150);
-   /* padding-right: 24px; */
    color: var(--slate-400);
-}
+} */
 
 .icons{
-   display: flex;
-   column-gap: var(--spacing-100);
-   /* column-gap: 16px; */
+   /* display: flex; */
+   /* column-gap: var(--spacing-100); */
    padding-right: 0;
-   /* padding-right: 64px; */
 }
 
-/* ? bubble ================================= */
-/* .speech-bubble { */
-/* .share-btn-group-desktop { */
-  /* position: relative;  */
-  /* Base for absolute triangle */
-  /* background: #00aabb; */
-  /* color: #fff; */
-  /* padding: 15px 20px; */
-  /* border-radius: 10px; */
-  /* display: inline-block; */
-  /* font-family: sans-serif; */
-/* } */
+/*  --  bubble / upside down triangle on share component  */
 
 .share-btn-group-desktop ::after {
   content: '';
@@ -456,20 +398,12 @@ a img{
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 15px solid var(--slate-900); 
-  /* Match bubble background color */
 }
-
-
- 
-
-
-/* ? ======================================= */
 
 /* DO NOT CHANGE ORDER OF BELOW OR PLACE CSS CODE BELOW THIS POINT */
 
 .desktop-only{
    display: flex;
-   /* position: relative; */
 }
 
 .display{
@@ -480,7 +414,62 @@ a img{
    display: none;
 }
 
-/* .view{
-   display:flex;
-} */
+}
+
+
+/* ? maybe make this before the 1440 mark */
+/* ? or give image a max width above and maybe use minmax for tablet */
+@media screen and (min-width:1440px){
+
+.main {
+   /* display: flex; */
+   /* flex-direction:row; */
+   /* justify-content: center; */
+   /* align-items: center; */
+   /* width: 100%;    */
+   column-gap: var(--spacing-250);
+   /* background-color: var(--white); */
+   /* border-radius: 10px; */
+}
+
+
+
+.main-container{
+   /* display: flex; */
+   /* flex-direction: row; */
+   /* width: 100%; */
+   padding: 260px 355px;
+   /* align-items: center; */
+}   
+
+.main-container-image {
+   /* flex-grow: 1; */
+   /* flex-direction: row; */
+   min-width: 285px;
+}
+
+.hero-image{
+   /* border-top-right-radius: 0; */
+   /* border-bottom-left-radius: 10px; */
+   
+   /* width: 100%; */
+   /* height: auto; */
+   aspect-ratio: 285 / 280; /* Maintains the exact initial proportion as it grows */
+   /* object-fit: cover; Prevents distortion if the image's natural ratio differs */
+   /* display: block; Removes extra bottom whitespace */
+}
+
+.main-container-content{
+   /* flex: 1 1 auto; */
+   /* justify-content: center; */
+   /* padding: 0; */
+   /* row-gap: var(--spacing-150); */
+   padding-right: var(--spacing-250);
+}
+
+.main-container-content.row-gap-small{
+   row-gap: var(--spacing-150);
+}
+
+
 }
