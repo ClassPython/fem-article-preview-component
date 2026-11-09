@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-   box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 :root{
@@ -21,87 +21,113 @@
 
     /* --- Slate --- */
     /* HSL */
-  --slate-900:hsl(217, 19%, 35%);
-  --slate-500:hsl(214, 17%, 51%);
-  --slate-400:hsl(212, 23%, 69%);
-  --slate-200:hsl(210, 46%, 95%);
+   --slate-900:hsl(217, 19%, 35%);
+   --slate-500:hsl(214, 17%, 51%);
+   --slate-400:hsl(212, 23%, 69%);
+   --slate-200:hsl(210, 46%, 95%);
 
     /* --- Neutral ---  */
- --white:hsl(0, 100%, 100%);
+   --white:hsl(0, 100%, 100%);
+
+   /* font family */
+   font-family: 'Manrope', sans-serif;
 
 
- /* font family */
- font-family: 'Manrope', sans-serif;
-
-
- /* ---preset I -  manrope bold 20px 130% Line Height 0.25px Letter Spacing*/
-    --h1-size:1.25rem;
-    --h1-weight:700;
-    --h1-line-height:1.3;
-    --h1-letter-spacing:.0125em; /* .25px/20px to convert to em */
+   /* ---preset I -  manrope bold 20px 130% Line Height 0.25px Letter Spacing*/
+   --h1-size:1.25rem;
+   --h1-weight:700;
+   --h1-line-height:1.3;
+   --h1-letter-spacing:.0125em; /* .25px/20px to convert to em */
   
- /*  -- preset II manrope bold 13px 140% Line Height 0.12% Letter Spacing */
-    --h2-size:.8125rem;
-    --h2-weight:700;
-    --h2-line-height:1.4;
-    --h2-letter-spacing:0.0012em; /* .12 / 100 */
+   /*  -- preset II manrope bold 13px 140% Line Height 0.12% Letter Spacing */
+   --h2-size:.8125rem;
+   --h2-weight:700;
+   --h2-line-height:1.4;
+   --h2-letter-spacing:0.0012em; /* .12 / 100 */
   
- /* preset III - manrope medium 13px 140% Line Height 0.12% Letter Spacing  */
-    --h3-size:.8125rem;
-    --h3-weight:500;
-    --h3-line-height:1.4;
-    --h3-letter-spacing:0.0012em; /* .12 / 100 */
+   /* preset III - manrope medium 13px 140% Line Height 0.12% Letter Spacing  */
+   --h3-size:.8125rem;
+   --h3-weight:500;
+   --h3-line-height:1.4;
+   --h3-letter-spacing:0.0012em; /* .12 / 100 */
  
- /* preset IV - manrope 13px 140% Line Height 25% Letter Spacing  */    
-    --h4-size:.8125rem;
-    --h4-weight:500;  /* medium ?? - regular is 400 */
-    --h4-line-height:1.4; /* 25% of 13px = 0.25em (3.25px) */
-    --h4-letter-spacing:.25em; 
+   /* preset IV - manrope 13px 140% Line Height 25% Letter Spacing  */    
+   --h4-size:.8125rem;
+   --h4-weight:500;  /* medium ?? - regular is 400 */
+   --h4-line-height:1.4; /* 25% of 13px = 0.25em (3.25px) */
+   --h4-letter-spacing:.25em; 
 
 
- /* --- Spacing --- */
-  --spacing-1400:14.1875rem;   /* 227px 14.1875 */
-  --spacing-1000:10rem;   /* 160px 10 */
-  --spacing-650:6.5rem;  /* 104px  6.5 */
-  --spacing-500:5rem;   /* 80px 5 */
- --spacing-400:4rem;  /* 64px 4 */
- --spacing-350:3.5rem; /* 56px  3.5*/
- --spacing-300:3rem;  /* 48px  3*/
- --spacing-250:2.5rem; /* 40px 2.5 */
- --spacing-225:2.25rem;  /* 36px 2.25 */
- --spacing-200:2rem;  /* 32px 2 */
- --spacing-187:1.875rem;  /* 30px 1.875 */
- --spacing-150:1.5rem;/* 24px 1.5 */
- --spacing-112:1.125rem; /* 18px  1.125 */
- --spacing-100:1rem; /* 16px  1 */
- --spacing-50:.5rem; /* 8px  .5 */
- --spacing-0:0rem;   /* 0px  0*/
+   /* --- Spacing --- */
+   --spacing-1400:14.1875rem;   /* 227px 14.1875 */
+   --spacing-1000:10rem;   /* 160px 10 */
+   --spacing-650:6.5rem;  /* 104px  6.5 */
+   --spacing-500:5rem;   /* 80px 5 */
+   --spacing-400:4rem;  /* 64px 4 */
+   --spacing-350:3.5rem; /* 56px  3.5*/
+   --spacing-300:3rem;  /* 48px  3*/
+   --spacing-250:2.5rem; /* 40px 2.5 */
+   --spacing-225:2.25rem;  /* 36px 2.25 */
+   --spacing-200:2rem;  /* 32px 2 */
+   --spacing-187:1.875rem;  /* 30px 1.875 */
+   --spacing-150:1.5rem;/* 24px 1.5 */
+   --spacing-112:1.125rem; /* 18px  1.125 */
+   --spacing-100:1rem; /* 16px  1 */
+   --spacing-50:.5rem; /* 8px  .5 */
+   --spacing-0:0rem;   /* 0px  0*/
 
 }
 
 body{
-    font-size: var(--font-size-body);
-    line-height: var(--line-height-body);
+   font-size: var(--font-size-body);
+   line-height: var(--line-height-body);
 
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 100svh;
-    justify-content: start;
-    align-items: center;
-
-    background-color: var(--slate-200);
-}
-
-.main-container{
    display: flex;
    flex-direction: column;
    width: 100%;
-   /* padding: 64px 24px 65px 24px; */
+   min-height: 100svh;
+   justify-content: start;
+   align-items: center;
+   background-color: var(--slate-200);
+}
+
+/* Allow "Skip to Content" links or hidden buttons to appear when focused */
+
+.sr-only{
+   position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.sr-only:focus,
+.sr-only:active {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: visible !important;
+  clip: auto !important;
+  white-space: normal !important;
+  clip-path: none !important;
+}
+
+/* .main-container{ */
+.main-container-outer{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
    padding: var(--spacing-400) var(--spacing-150);
 }
    
-.main{
+/* .main{ */
+.main-container-inner{
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -109,9 +135,9 @@ body{
 }
 
 .main-container-image{
-   width: 100%;
    display: flex;
    flex-direction: column;
+   width: 100%;
 }
 
 .hero-image{
@@ -181,7 +207,8 @@ body{
    color: var(--slate-500);
 }
 
-.content-btn-group, .content-btn-group-desktop{
+/* .content-btn-group, .content-btn-group-desktop{ */
+.content-mobile-profile-btn-group, .content-desktop-profile-btn-group{
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -189,7 +216,8 @@ body{
    padding-bottom: var(--spacing-112);
 }
 
-.btn-group-profile{
+/* .btn-group-profile{ */
+.profile-container{
    display: flex;
    flex-direction: row;
    column-gap: var(--spacing-100);
@@ -224,11 +252,12 @@ body{
    color: var(--slate-400);
 }
 
-.btn{
+/* .btn{ */
+.btn-container{
    display: flex;
-   flex-direction: column;
    justify-content: center;
    align-items: center;
+   flex-direction: column;
 }
 
 .share-btn{
@@ -239,7 +268,8 @@ body{
    overflow: hidden;
 }
 
-.share-btn-group, .share-btn-group-desktop {
+/* .share-btn-group, .share-btn-group-desktop { */
+.share-btn-group-mobile, .share-btn-group-desktop {
    display: flex;
    flex-direction: row;
    padding: var(--spacing-200) var(--spacing-100);
@@ -252,11 +282,13 @@ body{
    align-items: center;
 }
 
-.share-btn-group{
+/* .share-btn-group{ */
+.share-btn-group-mobile{
    justify-content: space-between;
 } 
 
-.share{
+/* .share{ */
+.share-title{
    font-size: var(--h4-size);
    font-weight: var(--h4-weight);
    letter-spacing: var(--h4-letter-spacing);
@@ -266,7 +298,8 @@ body{
    color: var(--slate-400);
 }
 
-.icons{
+/* .icons{ */
+.share-links{
    display: flex;
    column-gap: var(--spacing-100);
    padding-right: var(--spacing-400);
@@ -284,28 +317,24 @@ body{
    display: none;
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:48em){
    
 .relative{
    position: relative;
 }
 
-.main {
-   /* display: flex; */
+/* .main { */
+.main-container-inner {
    flex-direction:row;
-   /* justify-content: center; */
-   /* align-items: center; */
    width: 100%;   
    column-gap: var(--spacing-200);
    background-color: var(--white);
    border-radius: 10px;
-   /* max-width: 992px; */
 }
 
-.main-container{
-   /* display: flex; */
+/* .main-container{ */
+.main-container-outer{
    flex-direction: row;
-   /* width: 100%; */
    padding: var(--spacing-1400) var(--spacing-500);
    align-items: center;
 }
@@ -314,25 +343,21 @@ body{
    flex-grow: 1;
    flex-direction: row;
    min-width: 229px;
-   /* Inserted */
    max-width:290px;
 }
 
 .hero-image{
+   display: block; /* Removes extra bottom whitespace */
    border-top-right-radius: 0;
    border-bottom-left-radius: 10px;
-   
    width: 100%;
    height: auto;
    aspect-ratio: 229 / 346; /* Maintains the exact initial proportion as it grows */
    object-fit: cover; /* Prevents distortion if the image's natural ratio differs */
-   display: block; /* Removes extra bottom whitespace */
 }
 
 .main-container-content{
    flex: 1 1 auto;
-   /* insert max - width */
-   /* max-width: 674px; */
    justify-content: center;
    padding: 0;
    row-gap: var(--spacing-150);
@@ -343,7 +368,8 @@ body{
    row-gap: var(--spacing-150);
 } 
 
-.content-btn-group{
+/* .content-btn-group{ */
+.content-mobile-profile-btn-group{
    padding: 0;
 }
 
@@ -352,52 +378,38 @@ body{
 }
 
 .share-btn-group-desktop{
+   display: inline-block;
    padding: 18px 38px 18px 38px;
    border-radius: 10px;
    position: absolute;
    top: -5.375rem;
-  padding: 18px 38px 18px 38px;
-  border-radius: 10px;
-  display: inline-block;
+   padding: 18px 38px 18px 38px;
+   border-radius: 10px;
 }
 
 a img{
    display: block;
 }
 
-
-/* .share{
-   font-size: var(--h4-size);
-   font-weight: var(--h4-weight);
-   letter-spacing: var(--h4-letter-spacing);
-   line-height: var(--h4-line-height);
-   text-transform: uppercase;
-   padding-right: var(--spacing-150);
-   color: var(--slate-400);
-} */
-
-.icons{
-   /* display: flex; */
-   /* column-gap: var(--spacing-100); */
+/* .icons{ */
+.share-links{
    padding-right: 0;
 }
 
 /*  --  bubble / upside down triangle on share component  */
-
 .share-btn-group-desktop ::after {
-  content: '';
-  position: absolute;
-  bottom: -15px; /* Moves triangle just below the bubble */
-  left: 50%;
-  transform: translateX(-50%); /* Centers the triangle */
+   content: '';
+   position: absolute;
+   bottom: -15px; /* Moves triangle just below the bubble */
+   left: 50%;
+   transform: translateX(-50%); /* Centers the triangle */
+   width: 0;
+   height: 0;
   
-  width: 0;
-  height: 0;
-  
-  /* Creates a downward-pointing triangle */
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 15px solid var(--slate-900); 
+   /* Creates a downward-pointing triangle */
+   border-left: 10px solid transparent;
+   border-right: 10px solid transparent;
+   border-top: 15px solid var(--slate-900); 
 }
 
 /* DO NOT CHANGE ORDER OF BELOW OR PLACE CSS CODE BELOW THIS POINT */
@@ -417,53 +429,27 @@ a img{
 }
 
 
-/* ? maybe make this before the 1440 mark */
-/* ? or give image a max width above and maybe use minmax for tablet */
-@media screen and (min-width:1440px){
+@media screen and (min-width:90em){
 
-.main {
-   /* display: flex; */
-   /* flex-direction:row; */
-   /* justify-content: center; */
-   /* align-items: center; */
-   /* width: 100%;    */
+/* .main { */
+.main-container-inner {
    column-gap: var(--spacing-250);
-   /* background-color: var(--white); */
-   /* border-radius: 10px; */
 }
 
-
-
-.main-container{
-   /* display: flex; */
-   /* flex-direction: row; */
-   /* width: 100%; */
+/* /* .main-container{ */
+.main-container-outer{ 
    padding: 260px 355px;
-   /* align-items: center; */
 }   
 
 .main-container-image {
-   /* flex-grow: 1; */
-   /* flex-direction: row; */
    min-width: 285px;
 }
 
 .hero-image{
-   /* border-top-right-radius: 0; */
-   /* border-bottom-left-radius: 10px; */
-   
-   /* width: 100%; */
-   /* height: auto; */
    aspect-ratio: 285 / 280; /* Maintains the exact initial proportion as it grows */
-   /* object-fit: cover; Prevents distortion if the image's natural ratio differs */
-   /* display: block; Removes extra bottom whitespace */
 }
 
 .main-container-content{
-   /* flex: 1 1 auto; */
-   /* justify-content: center; */
-   /* padding: 0; */
-   /* row-gap: var(--spacing-150); */
    padding-right: var(--spacing-250);
 }
 
@@ -473,3 +459,11 @@ a img{
 
 
 }
+
+
+/* ?  Notes */
+/* • aria-haspopup="true": Tells a screen reader that activating this button opens a menu. */
+/* • aria-expanded="false": Dynamic attribute. It must switch to true via JavaScript whenever the menu is open, and back to false when hidden. */
+/* • aria-controls="share-menu": Explicitly links the button to the id of the menu it controls. */
+/* • aria-label="Share this content": Provides an explicit text fallback since an arrow icon doesn't explicitly read out "Share" to a non-visual user. */
+/* • aria-hidden="true" on images: Hides decorative or redundant graphics from screen readers to reduce audible clutter. */

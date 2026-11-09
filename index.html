@@ -17,10 +17,9 @@
 </head>
 <body>
     
-    <main class="main-container">
+    <main class="main-container-outer">
         
-        <div class="main">    
-            <!-- ? description for alt -->
+        <div class="main-container-inner">    
             
             <div class="main-container-image">
                 <img  class="hero-image" src="./images/drawers.jpg" alt="">
@@ -28,79 +27,107 @@
             
             <div class="main-container-content">
                 
-                <!-- ? figure out tall the h1, h2, p and spans -->
                 <div class="content-text">
                     <h1 class="text-title">Shift the overall look and feel by adding these wonderful 
                         touches to furniture in your home</h1>
                         
-                    <h3 class="text-description">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</h3>
+                    <p class="text-description">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
                 </div>
     <!-- mobile profile view  -->
-     <!-- ? mobile-content-btn-group  mobile-only -->
-                <div class="content-btn-group mobile-only">
+                <div class="content-mobile-profile-btn-group mobile-only">
                         
-                    <div class="btn-group-profile">
+                    <!-- ? profile-container -->
+                    <figure class="profile-container">
                         <img class="profile-img" src="./images/avatar-michelle.jpg" alt="">
                             
-                        <div class="profile-info">
-                                <p class="profile-info-title">Michelle Appleton</p>
-                                <span class="profile-info-date">28 Jun 2020</span>
-                        </div>
-                    </div>
+                        <figcaption class="profile-info">
+                                <span class="profile-info-title">Michelle Appleton</span>
+                                <time datetime="2028-06-28"  class="profile-info-date">28 Jun 2020</time>
+                        </figcaption>
+                    </figure>
                         
                         <!-- ? will need description of share  -->
-                    <div class="btn">
-                            <button class="share-btn mobile-btn-open" type="button">
-                                <img class="btn-image" src="./images/icon-share.svg" alt="">
+                         <!-- ? change to btn-container -->
+                    <!-- <div class="btn"> -->
+                    <div class="btn-container">
+                            <button 
+                            class="share-btn mobile-btn-open" 
+                            type="button"
+                            aria-haspopup="true" 
+                            aria-expanded="false" 
+                            aria-controls="share-menu"
+                            aria-label="Share this content">
+                                <img class="btn-image" src="./images/icon-share.svg" alt="" aria-hidden="true">
+                                <span class="sr-only">Open share options</span>
                             </button>
                     </div>   
                 </div>
 <!-- mobile profile view  -->
 
 <!-- mobile share links view -->
- <!-- ?  mobile-share-btn-group  mobile-only display or maybe display-mobile-->
-                <div class="share-btn-group mobile-only display">
+ <!-- ?  mobile-share-links-group  mobile-only display or maybe display-mobile-->
+                <div class="share-btn-group-mobile mobile-only display">
+
+<!-- ? share-title -->
+                    <p class="share-title">share</p>
 
 
-                    <p class="share">share</p>
-
-                    <div class="icons">       
+                    <!-- ? change icon to share-links -->
+                    <!-- <div class="icons">        -->
+                    <div class="share-links">       
                         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                          <img  class="social-icon" src="./images/icon-facebook.svg" alt="">
+                          <img  class="social-icon" src="./images/icon-facebook.svg" alt="" aria-hidden="true">
+                          <span class="sr-only">Share on Facebook</span>
                         </a>
 
                         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                           <img  class="social-icon" src="./images/icon-twitter.svg" alt="">
+                           <img  class="social-icon" src="./images/icon-twitter.svg" alt="" aria-hidden="true">
+                           <span class="sr-only">Share on Twitter</span>
                         </a>
 
                         <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
-                          <img  class="social-icon" src="./images/icon-pinterest.svg" alt="">
+                          <img  class="social-icon" src="./images/icon-pinterest.svg" alt="" aria-hidden="true">
+                          <span class="sr-only">Share on Pinterest</span>
                         </a>
                     </div>
 
                     <!-- ? remember to add the hand pointer to each button -->
-                    <button class="share-btn btn-close mobile-btn-close" type="button">
-                        <img class="btn-image" src="./images/icon-share.svg" alt="">
+                    <button 
+                        class="share-btn btn-close mobile-btn-close" 
+                        type="button"
+                        aria-haspopup="true" 
+                        aria-expanded="false" 
+                        aria-controls="share-menu"
+                        aria-label="Share this content">
+                        <img class="btn-image" src="./images/icon-share.svg" alt="" aria-hidden="true">
                     </button>
                 </div>
      <!-- mobile share links view -->           
 
 
      <!-- desktop profile view -->
-        <div class="content-btn-group-desktop desktop-only">
+      <!-- ? same as above except use desktop instead of mobile -->
+        <div class="content-desktop-profile-btn-group desktop-only">
                         
-                    <div class="btn-group-profile">
+                    <!-- <figure class="btn-group-profile"> -->
+                    <figure class="profile-container">
                         <img class="profile-img" src="./images/avatar-michelle.jpg" alt="">
                             
-                        <div class="profile-info">
-                                <p class="profile-info-title">Michelle Appleton</p>
-                                <span class="profile-info-date">28 Jun 2020</span>
-                        </div>
-                    </div>
+                        <figcaption class="profile-info">
+                                <span class="profile-info-title">Michelle Appleton</span>
+                                <time datetime="2028-06-28" class="profile-info-date">28 Jun 2020</time>
+                        </figcaption>
+                    </figure>
                         
                         <!-- ? will need description of share  -->
-                    <div class="btn relative">
-                            <button class="share-btn btn-close desktop-btn-open" type="button">
+                    <!-- <div class="btn relative"> -->
+                    <div class="btn-container relative">
+                            <button 
+                                class="share-btn btn-close desktop-btn-open" type="button"
+                                aria-haspopup="true" 
+                                aria-expanded="false" 
+                                aria-controls="share-menu"
+                                aria-label="Share this content">
                                 <img class="btn-image" src="./images/icon-share.svg" alt="">
                             </button>
 
@@ -108,19 +135,24 @@
                              <div class="share-btn-group-desktop desktop-only display">
 
 
-                    <p class="share">share</p>
+                    <p class="share-title">share</p>
 
-                    <div class="icons">       
+                    <!-- <div class="icons">        -->
+                    <div class="share-links">       
                         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                           <img  class="social-icon" src="./images/icon-facebook.svg" alt="">
+                          <span class="sr-only">Share on Facebook</span>
                         </a>
 
                         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                            <img  class="social-icon" src="./images/icon-twitter.svg" alt="">
+                           <span class="sr-only">Share on Twitter</span>
                         </a>
 
                         <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
                           <img  class="social-icon" src="./images/icon-pinterest.svg" alt="">
+                          <span class="sr-only">Share on Pinterest</span>
+
                         </a>
                     </div>
                     
