@@ -52,8 +52,7 @@
                             type="button"
                             aria-haspopup="true" 
                             aria-expanded="false" 
-                            aria-controls="share-menu"
-                            aria-label="Share this content">
+                            aria-controls="share-menu-mobile">
                                 <img class="btn-image" src="./images/icon-share.svg" alt="" aria-hidden="false">
                                 <span class="sr-only">Open share options</span>
                             </button>
@@ -62,7 +61,7 @@
 <!-- mobile profile view end  -->
 
 <!-- mobile share links view start -->
-                <div class="share-btn-group-mobile mobile-only display">
+                <div id="share-menu-mobile" class="share-btn-group-mobile mobile-only display">
 
                     <p class="share-title">share</p>
 
@@ -88,8 +87,7 @@
                         type="button"
                         aria-haspopup="true" 
                         aria-expanded="false" 
-                        aria-controls="share-menu"
-                        aria-label="Share this content">
+                        aria-controls="share-menu-mobile">
                         <img class="btn-image" src="./images/icon-share.svg" alt="" aria-hidden="true">
                         <span class="sr-only">Close share options</span>
                     </button>
@@ -114,13 +112,12 @@
                                 class="share-btn btn-close desktop-btn-open" type="button"
                                 aria-haspopup="true" 
                                 aria-expanded="false" 
-                                aria-controls="share-menu"
-                                aria-label="Share this content">
+                                aria-controls="share-menu-desktop">
                                 <img class="btn-image" src="./images/icon-share.svg" alt="">
                                 <span class="sr-only">Toggle share options</span>
                             </button>
 
-                             <div class="share-btn-group-desktop desktop-only display">
+                             <div id="share-menu-desktop" class="share-btn-group-desktop desktop-only display">
    <!-- desktop profile view end  -->
    
    <!-- desktop share links view start  -->
