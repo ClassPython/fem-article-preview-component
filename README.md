@@ -2,7 +2,8 @@
 
 ## Overview
 
-For this challenge, I built and deployed Frontend Mentor's "Article preview component". They provided all the necessary assets, including the images, a Figma file, and a comprehensive style guide.
+For this challenge, I built and deployed Frontend Mentor's Article preview component. This challenge involves clicking a share button to reveal social links, with a layout that adapts across screen sizes. Frontend Mentor provided all the necessary assets, including images, a Figma file, and a comprehensive style guide.
+
 
 [Frontend Mentor Article preview component challenge](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT)
 
