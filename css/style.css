@@ -294,6 +294,24 @@ body{
    padding-right: var(--spacing-400);
 }
 
+.share-links a{
+   height: 20px;
+   width: 20px;
+}
+
+.share-links a {
+  transition: opacity 0.3s ease;
+}
+
+.share-links a:hover {
+  opacity: 0.6;
+}
+
+.share-links a:focus-visible {
+  outline: 1px solid white;
+  outline-offset: 3px;
+}
+
 .btn-close{
    text-align: center;
 }
