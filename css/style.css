@@ -57,7 +57,6 @@
    --h4-line-height:1.4; /* 25% of 13px = 0.25em (3.25px) */
    --h4-letter-spacing:.25em; 
 
-
    /* --- Spacing --- */
    --spacing-1400:14.1875rem;   /* 227px 14.1875 */
    --spacing-1000:10rem;   /* 160px 10 */
@@ -75,26 +74,25 @@
    --spacing-100:1rem; /* 16px  1 */
    --spacing-50:.5rem; /* 8px  .5 */
    --spacing-0:0rem;   /* 0px  0*/
-
 }
 
 body{
-   font-size: var(--font-size-body);
-   line-height: var(--line-height-body);
+ font-size: var(--font-size-body);
+ line-height: var(--line-height-body);
 
-   display: flex;
-   flex-direction: column;
-   width: 100%;
-   min-height: 100svh;
-   justify-content: start;
-   align-items: center;
-   background-color: var(--slate-200);
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ min-height: 100svh;
+ justify-content: start;
+ align-items: center;
+ background-color: var(--slate-200);
 }
 
-/* Allow "Skip to Content" links or hidden buttons to appear when focused */
 
+/* For screen readers */
 .sr-only{
-   position: absolute;
+  position: absolute;
   width: 1px;
   height: 1px;
   padding: 0;
@@ -118,7 +116,6 @@ body{
   clip-path: none !important;
 }
 
-/* .main-container{ */
 .main-container-outer{
    display: flex;
    flex-direction: column;
@@ -126,7 +123,6 @@ body{
    padding: var(--spacing-400) var(--spacing-150);
 }
    
-/* .main{ */
 .main-container-inner{
    display: flex;
    flex-direction: column;
@@ -157,18 +153,18 @@ body{
    background-color: var(--white);
 }
 
-/* change row gap when toggling between views in mobile view */
+/* change row gap when toggling between links in mobile view */
 .main-container-content.row-gap-small{
    row-gap: 16.50px;
 }
 
-/* change colors of share icon on hover */
 .share-btn {
-  background-color: var(--light-grayish-blue);
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+   background-color: var(--light-grayish-blue);
+   cursor: pointer;
+   transition: background-color 0.3s ease;
 }
 
+/* change colors of share icon on hover */
 .share-btn:hover,
 .share-btn[aria-expanded="true"] {
   background-color: var(--desaturated-dark-blue);
@@ -207,7 +203,6 @@ body{
    color: var(--slate-500);
 }
 
-/* .content-btn-group, .content-btn-group-desktop{ */
 .content-mobile-profile-btn-group, .content-desktop-profile-btn-group{
    display: flex;
    flex-direction: row;
@@ -216,7 +211,6 @@ body{
    padding-bottom: var(--spacing-112);
 }
 
-/* .btn-group-profile{ */
 .profile-container{
    display: flex;
    flex-direction: row;
@@ -252,7 +246,6 @@ body{
    color: var(--slate-400);
 }
 
-/* .btn{ */
 .btn-container{
    display: flex;
    justify-content: center;
@@ -268,7 +261,6 @@ body{
    overflow: hidden;
 }
 
-/* .share-btn-group, .share-btn-group-desktop { */
 .share-btn-group-mobile, .share-btn-group-desktop {
    display: flex;
    flex-direction: row;
@@ -282,12 +274,10 @@ body{
    align-items: center;
 }
 
-/* .share-btn-group{ */
 .share-btn-group-mobile{
    justify-content: space-between;
 } 
 
-/* .share{ */
 .share-title{
    font-size: var(--h4-size);
    font-weight: var(--h4-weight);
@@ -298,7 +288,6 @@ body{
    color: var(--slate-400);
 }
 
-/* .icons{ */
 .share-links{
    display: flex;
    column-gap: var(--spacing-100);
@@ -317,13 +306,14 @@ body{
    display: none;
 }
 
+
+/* Tablet view */
 @media screen and (min-width:48em){
    
 .relative{
    position: relative;
 }
 
-/* .main { */
 .main-container-inner {
    flex-direction:row;
    width: 100%;   
@@ -332,7 +322,6 @@ body{
    border-radius: 10px;
 }
 
-/* .main-container{ */
 .main-container-outer{
    flex-direction: row;
    padding: var(--spacing-1400) var(--spacing-500);
@@ -368,7 +357,6 @@ body{
    row-gap: var(--spacing-150);
 } 
 
-/* .content-btn-group{ */
 .content-mobile-profile-btn-group{
    padding: 0;
 }
@@ -391,7 +379,6 @@ a img{
    display: block;
 }
 
-/* .icons{ */
 .share-links{
    padding-right: 0;
 }
@@ -429,14 +416,13 @@ a img{
 }
 
 
+/* Desktop view */
 @media screen and (min-width:90em){
 
-/* .main { */
 .main-container-inner {
    column-gap: var(--spacing-250);
 }
 
-/* /* .main-container{ */
 .main-container-outer{ 
    padding: 260px 355px;
 }   

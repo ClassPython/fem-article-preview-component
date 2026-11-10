@@ -33,10 +33,10 @@
                         
                     <p class="text-description">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
                 </div>
-    <!-- mobile profile view  -->
+
+<!-- mobile profile view start  -->
                 <div class="content-mobile-profile-btn-group mobile-only">
                         
-                    <!-- ? profile-container -->
                     <figure class="profile-container">
                         <img class="profile-img" src="./images/avatar-michelle.jpg" alt="">
                             
@@ -46,9 +46,6 @@
                         </figcaption>
                     </figure>
                         
-                        <!-- ? will need description of share  -->
-                         <!-- ? change to btn-container -->
-                    <!-- <div class="btn"> -->
                     <div class="btn-container">
                             <button 
                             class="share-btn mobile-btn-open" 
@@ -57,23 +54,18 @@
                             aria-expanded="false" 
                             aria-controls="share-menu"
                             aria-label="Share this content">
-                                <img class="btn-image" src="./images/icon-share.svg" alt="" aria-hidden="true">
+                                <img class="btn-image" src="./images/icon-share.svg" alt="" aria-hidden="false">
                                 <span class="sr-only">Open share options</span>
                             </button>
                     </div>   
                 </div>
-<!-- mobile profile view  -->
+<!-- mobile profile view end  -->
 
-<!-- mobile share links view -->
- <!-- ?  mobile-share-links-group  mobile-only display or maybe display-mobile-->
+<!-- mobile share links view start -->
                 <div class="share-btn-group-mobile mobile-only display">
 
-<!-- ? share-title -->
                     <p class="share-title">share</p>
 
-
-                    <!-- ? change icon to share-links -->
-                    <!-- <div class="icons">        -->
                     <div class="share-links">       
                         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                           <img  class="social-icon" src="./images/icon-facebook.svg" alt="" aria-hidden="true">
@@ -91,7 +83,6 @@
                         </a>
                     </div>
 
-                    <!-- ? remember to add the hand pointer to each button -->
                     <button 
                         class="share-btn btn-close mobile-btn-close" 
                         type="button"
@@ -100,16 +91,15 @@
                         aria-controls="share-menu"
                         aria-label="Share this content">
                         <img class="btn-image" src="./images/icon-share.svg" alt="" aria-hidden="true">
+                        <span class="sr-only">Close share options</span>
                     </button>
                 </div>
-     <!-- mobile share links view -->           
+     <!-- mobile share links view end -->           
 
 
-     <!-- desktop profile view -->
-      <!-- ? same as above except use desktop instead of mobile -->
+     <!-- desktop profile view start -->
         <div class="content-desktop-profile-btn-group desktop-only">
                         
-                    <!-- <figure class="btn-group-profile"> -->
                     <figure class="profile-container">
                         <img class="profile-img" src="./images/avatar-michelle.jpg" alt="">
                             
@@ -119,8 +109,6 @@
                         </figcaption>
                     </figure>
                         
-                        <!-- ? will need description of share  -->
-                    <!-- <div class="btn relative"> -->
                     <div class="btn-container relative">
                             <button 
                                 class="share-btn btn-close desktop-btn-open" type="button"
@@ -129,28 +117,29 @@
                                 aria-controls="share-menu"
                                 aria-label="Share this content">
                                 <img class="btn-image" src="./images/icon-share.svg" alt="">
+                                <span class="sr-only">Toggle share options</span>
                             </button>
 
-                            <!--- share component ------------ -->
                              <div class="share-btn-group-desktop desktop-only display">
-
+   <!-- desktop profile view end  -->
+   
+   <!-- desktop share links view start  -->
 
                     <p class="share-title">share</p>
 
-                    <!-- <div class="icons">        -->
                     <div class="share-links">       
                         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                          <img  class="social-icon" src="./images/icon-facebook.svg" alt="">
+                          <img  class="social-icon" src="./images/icon-facebook.svg" alt="" aria-hidden="true">
                           <span class="sr-only">Share on Facebook</span>
                         </a>
 
                         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                           <img  class="social-icon" src="./images/icon-twitter.svg" alt="">
+                           <img  class="social-icon" src="./images/icon-twitter.svg" alt="" aria-hidden="true">
                            <span class="sr-only">Share on Twitter</span>
                         </a>
 
                         <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
-                          <img  class="social-icon" src="./images/icon-pinterest.svg" alt="">
+                          <img  class="social-icon" src="./images/icon-pinterest.svg" alt="" aria-hidden="true">
                           <span class="sr-only">Share on Pinterest</span>
 
                         </a>
@@ -158,12 +147,10 @@
                     
                 </div>
 
-                            <!-- share component end ----------------- -->
                     </div>   
                 </div>
 
-   
-  <!-- desktop share links view -->               
+   <!-- desktop share links view end  -->
                     
             </div>
                 
