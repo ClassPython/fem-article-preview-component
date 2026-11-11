@@ -68,6 +68,7 @@
    --spacing-350:3.5rem; /* 56px  3.5*/
    --spacing-300:3rem;  /* 48px  3*/
    --spacing-250:2.5rem; /* 40px 2.5 */
+   --spacing-237:2.375rem; /* 38px 2.375 */
    --spacing-225:2.25rem;  /* 36px 2.25 */
    --spacing-200:2rem;  /* 32px 2 */
    --spacing-187:1.875rem;  /* 30px 1.875 */
@@ -387,8 +388,9 @@ body{
 
 .share-btn-group-desktop{
    display: inline-block;
-   padding: 18px 38px 18px 38px;
-   border-radius: 10px;
+   padding: var(--spacing-112) var(--spacing-237);
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
    position: absolute;
    top: -5.375rem;
 }
