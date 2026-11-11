@@ -58,6 +58,8 @@
    --h4-letter-spacing:.25em; 
 
    /* --- Spacing --- */
+   --spacing-2218:22.1875rem;   /* 355px 22.1875 */
+   --spacing-1625:16.25rem;   /* 260px 16.25 */
    --spacing-1400:14.1875rem;   /* 227px 14.1875 */
    --spacing-1000:10rem;   /* 160px 10 */
    --spacing-650:6.5rem;  /* 104px  6.5 */
@@ -165,8 +167,8 @@ body{
 }
 
 /* change colors of share icon on hover */
-.share-btn:hover,
-.share-btn[aria-expanded="true"] {
+/* .share-btn[aria-expanded="true"] */
+.share-btn:hover {
   background-color: var(--desaturated-dark-blue);
 }
 
@@ -174,8 +176,8 @@ body{
   transition: filter 0.3s ease;
 }
 
-.share-btn:hover img,
-.share-btn[aria-expanded="true"] img {
+/* .share-btn[aria-expanded="true"] img */
+.share-btn:hover img {
   filter: brightness(0) invert(1);
 }
 
@@ -436,7 +438,7 @@ a img{
 @media screen and (min-width:90em){
 
 .main-container-outer{ 
-   padding: 260px 355px;
+   padding: var(--spacing-1625) var(--spacing-2218);
 }
 
 .main-container-inner {
