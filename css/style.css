@@ -439,13 +439,20 @@ a img{
 /* Desktop view */
 @media screen and (min-width:90em){
 
-.main-container-outer{ 
-   padding: var(--spacing-1625) var(--spacing-2218);
+.main-container-outer {
+  /* Use fluid horizontal padding so smaller viewports don't get crushed */
+  padding-block: var(--spacing-1625);
+  padding-inline: clamp(1rem, 5vw, var(--spacing-2218));
 }
 
 .main-container-inner {
-   column-gap: var(--spacing-250);
-   max-width: 1440px;
+  display: flex;
+  column-gap: var(--spacing-250);
+
+  /* 1440px target layout minus left & right outer padding (2 * var(--spacing-2218)) */
+  width: 100%;
+  max-width: calc(1440px - (2 * var(--spacing-2218)));
+  margin-inline: auto;
 }
 
 .main-container-image {
